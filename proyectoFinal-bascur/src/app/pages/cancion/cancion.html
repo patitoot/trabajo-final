@@ -1,0 +1,40 @@
+<section class="pagina-canciones">
+
+  <div class="encabezado">
+    <p class="subtitulo">LA MÚSICA QUE MARCÓ UNA ÉPOCA</p>
+    <h1>CANCIОNES</h1>
+    <p>Descubrí algunos de los grandes temas de Soda Stereo.</p>
+  </div>
+
+  <div class="contenedor-canciones">
+
+    @for (cancion of canciones; track cancion.id) {
+      <div class="tarjeta-cancion">
+
+        <img [src]="cancion.imagen" [alt]="cancion.album">
+
+        <div class="contenido-tarjeta">
+          <h2>{{ cancion.titulo }}</h2>
+          <p>Álbum: {{ cancion.album }}</p>
+
+          <div class="botones">
+            <a [href]="cancion.youtube" target="_blank" rel="noopener noreferrer">
+              YouTube
+            </a>
+
+            <a [href]="cancion.spotify" target="_blank" rel="noopener noreferrer">
+              Spotify
+            </a>
+          </div>
+        </div>
+
+      </div>
+    }
+
+    @if (canciones.length === 0) {
+      <p class="sin-canciones">Todavía no hay canciones disponibles.</p>
+    }
+
+  </div>
+
+</section>

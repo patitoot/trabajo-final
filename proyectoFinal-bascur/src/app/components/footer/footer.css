@@ -1,0 +1,62 @@
+.footer-soda {
+  background-color: #09090d;
+  color: #d8c8f0;
+  padding: 30px 15px 15px;
+  border-top: 2px solid #9b5cff;
+  box-shadow: 0 -2px 12px rgba(155, 92, 255, 0.15);
+  text-align: center;
+}
+
+.footer-titulo {
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px #9b5cff;
+}
+
+.footer-descripcion {
+  color: #a99bb9;
+  margin-bottom: 20px;
+}
+
+.footer-enlaces,
+.footer-musica {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 15px 0;
+}
+
+.footer-soda a {
+  color: #d8c8f0;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.footer-soda a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #9b5cff;
+}
+
+.footer-musica a {
+  border: 1px solid #9b5cff;
+  border-radius: 6px;
+  padding: 7px 12px;
+}
+
+.footer-musica a:hover {
+  background-color: #8b45d6;
+  box-shadow: 0 0 12px #9b5cff;
+}
+
+.footer-soda hr {
+  border-color: #65418b;
+  margin: 22px 0 12px;
+}
+
+.footer-copyright {
+  color: #a99bb9;
+  font-size: 13px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,145 @@
+/* ===== ESTILO GENERAL SODA STEREO ===== */
+
+:root {
+  --soda-fondo: #09090d;
+  --soda-superficie: #151019;
+  --soda-violeta: #9b5cff;
+  --soda-violeta-claro: #b58aff;
+  --soda-texto: #ffffff;
+  --soda-texto-secundario: #bdb7c8;
+  --soda-borde: #65418b;
+}
+
+/* Toda la página */
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--soda-fondo);
+  color: var(--soda-texto);
+  font-family: Arial, sans-serif;
+}
+
+/* Contenido principal */
+main {
+  min-height: 70vh;
+  background-color: var(--soda-fondo);
+  color: var(--soda-texto);
+  padding: 25px;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--soda-texto);
+}
+
+h1,
+h2 {
+  text-shadow: 0 0 12px rgba(155, 92, 255, 0.25);
+}
+
+/* Párrafos */
+p {
+  color: var(--soda-texto-secundario);
+  line-height: 1.6;
+}
+
+/* Enlaces */
+a {
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--soda-violeta-claro);
+}
+
+/* Tarjetas */
+.card {
+  background-color: var(--soda-superficie);
+  color: var(--soda-texto);
+  border: 1px solid var(--soda-borde);
+  border-radius: 10px;
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.25);
+}
+
+.card .card-title {
+  color: var(--soda-violeta-claro);
+}
+
+.card .card-text {
+  color: var(--soda-texto-secundario);
+}
+
+/* Botones generales */
+.btn-soda {
+  background-color: #21152f;
+  color: var(--soda-texto);
+  border: 1px solid var(--soda-violeta);
+  border-radius: 5px;
+  padding: 9px 18px;
+  transition: all 0.25s ease;
+}
+
+.btn-soda:hover {
+  background-color: #8b45d6;
+  color: white;
+  box-shadow: 0 0 12px var(--soda-violeta);
+  transform: translateY(-2px);
+}
+
+/* Campos de texto */
+.form-control {
+  background-color: var(--soda-superficie);
+  color: white;
+  border-color: var(--soda-borde);
+}
+
+.form-control:focus {
+  background-color: var(--soda-superficie);
+  color: white;
+  border-color: var(--soda-violeta);
+  box-shadow: 0 0 8px rgba(155, 92, 255, 0.5);
+}
+
+.form-control::placeholder {
+  color: #a99bb9;
+}
+
+/* Selección de texto */
+::selection {
+  background-color: var(--soda-violeta);
+  color: white;
+}
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+app-footer {
+  display: block;
+  margin-top: auto;
+}

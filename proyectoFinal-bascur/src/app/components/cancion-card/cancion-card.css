@@ -1,0 +1,58 @@
+.tarjeta-cancion {
+  background-color: #17121f;
+  border: 1px solid #65418b;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.tarjeta-cancion:hover {
+  transform: translateY(-5px);
+  border-color: #9b5cff;
+  box-shadow: 0 0 15px rgba(155, 92, 255, 0.3);
+}
+
+.tarjeta-cancion img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contenido-tarjeta {
+  padding: 18px;
+  text-align: center;
+}
+
+.contenido-tarjeta h2 {
+  color: white;
+  font-size: 19px;
+}
+
+.contenido-tarjeta p {
+  color: #b58aff;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.botones a {
+  flex: 1;
+  padding: 9px;
+  background-color: #8b45d6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contenido-tarjeta button {
+  width: 100%;
+  padding: 10px;
+  background-color: #30213f;
+  border: 1px solid #9b5cff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
